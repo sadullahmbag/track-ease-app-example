@@ -142,7 +142,6 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
     if (!user) return () => {};
 
     const subscription = supabaseHelpers.subscribeToSubscriptions(user.id, (payload) => {
-      console.log('Real-time update:', payload);
       // Refresh data when changes occur
       loadDataFromCloud();
     });
