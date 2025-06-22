@@ -1,0 +1,19 @@
+{
+  "cli": {
+    "version": ">= 3.11.1"
+  },
+  "build": {
+    "production": {
+      "ios": {
+        "workflow": "managed",
+        "distribution": "app-store"
+      },
+      "android": {
+        "workflow": "managed"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
